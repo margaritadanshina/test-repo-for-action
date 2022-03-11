@@ -1,0 +1,12 @@
+
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout tools repo
+        uses: actions/checkout@v2
+        with:
+          path: hello-world-javascript-actions
