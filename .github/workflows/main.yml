@@ -11,6 +11,7 @@ jobs:
         with:
           path: hello-world-javascript-actions
           
-      - name: Re-name the repo
+      - name: Repos name and New name
         run: |
+          echo ${{github.event.repository.name}}
           echo hello-world-javascript-actions - ${{github.run_number}}
