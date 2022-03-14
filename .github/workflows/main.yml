@@ -10,6 +10,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: hello-world-javascript-actions
+          destination-repository-name: "hellow-world-javascript-actions - ${{github.run_number}}" 
           
       - name: Re-name the repo
         run: |
