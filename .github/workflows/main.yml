@@ -13,4 +13,4 @@ jobs:
           
       - name: Re-name the repo
         run: |
-          echo hello-world-javascript-actions - ${github.run_number}
+          echo hello-world-javascript-actions - ${{github.run_number}}
