@@ -9,4 +9,8 @@ jobs:
       - name: Checkout tools repo
         uses: actions/checkout@v2
         with:
-          path: hello-world-javascript-actions - ${github.run_number}
+          path: hello-world-javascript-actions
+          
+      - name: Re-name the repo
+        run: |
+          echo hello-world-javascript-actions - ${github.run_number}
