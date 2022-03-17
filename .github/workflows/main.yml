@@ -7,7 +7,7 @@ jobs:
 
     steps:
       - name: Checkout tools repo
-        uses: actions/checkout@v2
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
         with:
           path: code-for-fun-alums/new-repo-${{github.run_number}}
           
