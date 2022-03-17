@@ -9,7 +9,7 @@ jobs:
       - name: Checkout tools repo
         uses: actions/checkout@v2
         with:
-          path: new-repo-${{github.run_number}}
+          path: code-for-fun-alums/new-repo-${{github.run_number}}
           
       - name: Repos name and New name
         run: |
