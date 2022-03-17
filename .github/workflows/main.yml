@@ -10,7 +10,7 @@ jobs:
         uses: GuillaumeFalourd/clone-github-repo-action@v2
         with:
           repository: margaritadanshina/test-repo-for-action
-          path: code-for-fun-alums/new-repo-${{github.run_number}}
+          path: margaritadanshina/new-repo-${{github.run_number}}
           
       - name: Repos name and New name
         run: |
